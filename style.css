@@ -1,0 +1,35 @@
+*{
+  
+}
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+
+.grid-container {
+  border: 1px solid black;
+  padding: auto;
+  width: 80vw;
+  margin-left: 20px;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+   'menu main main main main main';
+  gap: 5px;
+  background-color: #dcdede;
+  padding: 5px;
+ 
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
